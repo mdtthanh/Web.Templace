@@ -57,7 +57,7 @@ html {
     left: 0;
     z-index: 1;
 }
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
     #header {
         width: 100%;
         height: 46px;
@@ -68,7 +68,7 @@ html {
         left: 0;
         z-index: 1;
     }
-} */
+}
 
 #nav {
     display: inline-block;
