@@ -9,7 +9,7 @@ html {
     scroll-behavior: smooth;
 }
 #main {
-
+    overflow: hidden;
 }
 
 .text-white {
@@ -48,6 +48,7 @@ html {
     margin-top: 16px;
 }
 #header {
+    max-width: 100%;
     height: 46px;
     background-color: black;
     position: fixed;
@@ -56,9 +57,22 @@ html {
     left: 0;
     z-index: 1;
 }
+/* @media (max-width: 768px) {
+    #header {
+        width: 100%;
+        height: 46px;
+        background-color: black;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1;
+    }
+} */
 
 #nav {
     display: inline-block;
+    width: 100%;
 }
 
 #nav > li {
@@ -126,6 +140,7 @@ html {
 }
 
 #header .search {
+    right: 0;
     font-size: 20px;
     float: right;
     color: aliceblue;
@@ -139,10 +154,13 @@ html {
 }
 
 #slide {
+    
     margin-top: 46px;
     background-color: rgb(109, 150, 146);
     padding-top: 50%;
-    background: url('../img/slide/ny.jpg') top center / cover no-repeat;
+    background: url('../img/slide/ny.jpg') top center / cover no-repeat;   /*dùng để chạy trên github
+    /* background: url('/assets/img/slide/ny.jpg') top center / cover no-repeat; dùng để chạy local */
+
     color: aliceblue;
     position: relative;
 }
@@ -173,6 +191,9 @@ html {
     padding: 64px 0;
     margin-bottom: 22px;
     height: 640px;
+    max-width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 #content .section-heading {
     text-align: center;
@@ -280,6 +301,7 @@ html {
     margin-left: auto;
     margin-right: auto;
     height: 860px;
+    max-width: 100%;
 }
 .tour-section .place-body {
     background-color: white;
